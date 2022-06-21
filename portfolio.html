@@ -9,31 +9,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Портфолио</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <!--Nagigation-->
-        <nav>
-            <a href="index.html" class="logo"><span class="web-logo">Web</span>Studio
-            </a>
-
-            <ul class="navigation-menu">
-                <li><a href="index.html" class="navigation">Студия</a></li>
-                <li><a href="portfolio.html" class="navigation navigation-portfolio current">Портфолио</a></li>
-                <li><a href="#" class="navigation">Контакты</a></li>
+        <div class="container main-nav">
+            <nav class="main-nav">
+                <a href="index.html" class="logo"><span class="web-logo">Web</span>Studio
+                </a>
+    
+                <ul class="nav-menu main-nav">
+                    <li class="nav-item"><a href="index.html" class="navigation navigation-studio">Студия</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="navigation navigation-portfolio current">Портфолио</a></li>
+                    <li class="nav-item"><a href="#" class="navigation">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <ul class="address-table">
+                <li class="item"><a href="mailto:info@devstudio.com" class="address">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111" class="address">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-
-        <ul class="address-table">
-            <li><a href="mailto:info@devstudio.com" class="address">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="address">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
+    
+    
     </header>
     <main>
-<section>
+<!-- Hero title -->
+        <section>
+    <div class="container">
     <h1 class="portfolio-hero-title">Разделы</h1>
     <ul class="portfolio-but-table">
         <li><button type="button" class="portf-nav-buttons">Все</button></li>
@@ -42,13 +49,15 @@
         <li><button type="button" class="portf-nav-buttons">Дизайн</button></li>
         <li><button type="button" class="portf-nav-buttons">Маркетинг</button></li>
     </ul>
+    </div>
+    <div class="container">
     <ul class="portfolio-table">
         <li>
             <a href="#" class="portfolio-link">
                 <p><img src="./portfolioimages/img1.jpg" alt="Компьютер" width="370" height="294"></p>
                 <h2 class="portfolio-company-title">Технокряк</h2>
                 <p class="portfolio-text">Веб-сайт</p>
-
+    
             </a>
         </li>
         <li>
@@ -56,7 +65,7 @@
                 <p><img src="./portfolioimages/img2.jpg" alt="Игроки в баскетболл" width="370" height="294"></p>
                 <h2 class="portfolio-company-title">Постер New Orlean vs Golden Star</h2>
                 <p class="portfolio-text">Дизайн</p>
-
+    
             </a>
         </li>
         <li>
@@ -64,7 +73,7 @@
                 <p><img src="./portfolioimages/img3.jpg" alt="Эмблема ресторана рыба" width="370" height="294"></p>
                 <h2 class="portfolio-company-title">Ресторан Seafood</h2>
                 <p class="portfolio-text">Приложение</p>
-
+    
             </a>
         </li>
         <li>
@@ -72,7 +81,7 @@
                 <p><img src="./portfolioimages/img4.jpg" alt="Наушники" width="370" height="294"></p>
                 <h2 class="portfolio-company-title">Проект Prime</h2>
                 <p class="portfolio-text">Маркетинг</p>
-
+    
             </a>
         </li>
         <li>
@@ -80,7 +89,7 @@
                 <p><img src="/portfolioimages/img5.jpg" alt="две коробки" width="370" height="294"></p>
                 <h2 class="portfolio-company-title">Проект Boxes</h2>
                 <p class="portfolio-text">Приложение</p>
-
+    
             </a>
         </li>
         <li>
@@ -88,7 +97,7 @@
                 <p><img src="./portfolioimages/img6.jpg" alt="Моноблок" width="370" height="294"></p>
                 <h2 class="portfolio-company-title">Inspiration has no Borders</h2>
                 <p class="portfolio-text">Веб-сайт</p>
-
+    
             </a>
         </li>
         <li>
@@ -96,7 +105,7 @@
                 <p><img src="./portfolioimages/img7.jpg" alt="Журнал" width="370" height="294"></p>
                 <h2 class="portfolio-company-title">Издание Limited Edition</h2>
                 <p class="portfolio-text">Дизайн</p>
-
+    
             </a>
         </li>
         <li>
@@ -104,7 +113,7 @@
                 <p><img src="./portfolioimages/img8.jpg" alt="Бирка" width="370" height="294"></p>
                 <h2 class="portfolio-company-title">Проект LAB</h2>
                 <p class="portfolio-text">Маркетинг</p>
-
+    
             </a>
         </li>
         <li>
@@ -112,14 +121,17 @@
                 <p><img src="./portfolioimages/img9.jpg" alt="Печатает на ноутбуке" width="370" height="294"></p>
                 <h2 class="portfolio-company-title">Growing Business</h2>
                 <p class="portfolio-text">Приложение</p>
-
+    
             </a>
         </li>
     </ul>
+    </div>
+
 </section>
 
     </main>
     <footer class="footer-color">
+    <div class="container">
         <a href="index.html" class="footer-logo"><span class="web-logo">Web</span>Studio
         </a>
     
@@ -130,7 +142,8 @@
                 <li><a href="tel:+380961111111" class="address-mail-tel">+38 096 111 11 11</a> </li>
             </ul>
         </address>
-    
+    </div>
+
     </footer>
 </body>
 </html>
