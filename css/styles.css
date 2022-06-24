@@ -6,6 +6,7 @@
     --focus-text-color: #2196F3;
     --backgound-color: #2F303A;
     --hero-button-color-focus: #188CE8;
+    --portfolio-border: #EEEEEE;
 }
 body {
     background-color: var(--title-text-color);
@@ -25,19 +26,24 @@ h5,
 h6,
 p,
 ul {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-decoration: none;
-    list-style-type: none;
-    padding: 0px;
+    margin: 0;
+
+}
+ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0;
+}
+.images {
+    display: block;
+    min-width: 100%;
+    height: auto;
 }
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 /* Navigation */
 .header {
@@ -52,6 +58,7 @@ ul {
     color: inherit;
     padding-top: 24px;
     padding-bottom: 25px;
+    
 }
 .web-logo {
     color: var(--focus-text-color);
@@ -113,12 +120,18 @@ ul {
 .address:hover {
     color: var(--focus-text-color);
 }
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* Hero-title */
 .hero-section {
     background: var(--backgound-color);
         text-align: center;
         padding-top: 200px;
-        padding-bottom: 280px;
+        padding-bottom: 200px;
 }
 .hero-title {
     font-weight: 900;
@@ -193,6 +206,9 @@ ul {
 .work-item + .work-item {
 margin-left: 30px;
 }
+.work-section {
+    padding-top: 0;
+}
 /* team */
 .team-table {
     display: flex;
@@ -216,12 +232,15 @@ margin-left: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .team-job-title {
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
 color: var(--last-text-color);
+margin-bottom: 30px;
 }
 /* footer */
 .footer-div {
@@ -230,7 +249,8 @@ color: var(--last-text-color);
 }
 .footer-color {
     background-color: var(--backgound-color);
-    min-height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-logo {
     font-family: 'Raleway', sans-serif;
@@ -239,13 +259,12 @@ color: var(--last-text-color);
     line-height: 1.19;
     text-decoration: none;
     color: var(--title-text-color);
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     display: inline-block;
 }
 /* address */
-.address-item + .address-item {
-    padding-bottom: 9px;
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 .address-street {
     font-style: normal;
@@ -254,7 +273,7 @@ color: var(--last-text-color);
     color: var(--title-text-color);
     text-decoration: none;
     display: inline-block;
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 .address-mail-tel {
     font-style: normal;
@@ -275,6 +294,7 @@ color: var(--last-text-color);
     justify-content: center;
     margin-bottom: 50px;
 }
+
 .portfolio-hero-title {
     visibility: hidden;
     font-size: 0;
@@ -298,15 +318,17 @@ color: var(--last-text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
+.portfolio-item + .portfolio-item {
+    margin-left: 8px;
+}
 /* portfolio table */
 .portfolio-table {
     display: flex;
     flex-wrap: wrap;
 }
 .portf-table-item {
-    margin-right: 27px;
-    margin-bottom: 27px;
-    border: 1px solid #EEEEEE;
+    margin-right: 30px;
+    margin-bottom: 30px;
     box-sizing: border-box;
 
 }
@@ -316,17 +338,14 @@ color: var(--last-text-color);
 .portf-table-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
-.portf-table-item {
-    min-width: 370px;
-}
+
 .portfolio-company-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--first-text-color);
-    padding-top: 20px;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 }
 .portfolio-link {
     text-decoration: none;
@@ -335,4 +354,10 @@ color: var(--last-text-color);
     font-size: 16px;
     line-height: 1.88;
     color: var(--last-text-color);
+}
+.portf-pad-div {
+    padding: 20px 24px;
+    border-left: 1px solid var(--portfolio-border);
+    border-right: 1px solid var(--portfolio-border);
+    border-bottom: 1px solid var(--portfolio-border);
 }
